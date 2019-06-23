@@ -1,0 +1,19 @@
+{
+    "name": "sdgs-ship",
+    "version": "0.0.0",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "controller.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "preferredEditor": "tsprj"
+}

@@ -18,17 +18,17 @@ namespace コントローラー {
             isAbleToSend = false;
         }
     }
-    //% blockId=right block="$shipName を $speed のスピードで右折させる"
-    export function right(shipName: string, speed: number): void {
+    //% blockId=right block="$shipName を $angle の角度で右折させる"
+    export function right(shipName: string, angle: number): void {
         if (isAbleToSend) {
-            radio.sendValue(shipName + "r", speed);
+            radio.sendValue(shipName + "r", angle);
             isAbleToSend = false;
         }
     }
-    //% blockId=left block="$shipName を $speed のスピードで左折させる"
-    export function left(shipName: string, speed: number): void {
+    //% blockId=left block="$shipName を $angle のスピードで左折させる"
+    export function left(shipName: string, angle: number): void {
         if (isAbleToSend) {
-            radio.sendValue(shipName + "l", speed);
+            radio.sendValue(shipName + "l", angle);
             isAbleToSend = false;
         }
     }

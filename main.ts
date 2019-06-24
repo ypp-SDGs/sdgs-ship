@@ -1,5 +1,9 @@
-namespace comment {
+namespace コメント {
     //% blockId=show_strings block="コメント %v"
     export function noaction(text: string): void {
+    }
+
+    export function some() {
+        
     }
 }

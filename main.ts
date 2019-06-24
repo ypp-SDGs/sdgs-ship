@@ -3,7 +3,7 @@ namespace コメント {
     export function noaction(text: string): void {
     }
 
-    export function some() {
-        
+    export function some(text: string) {
+        basic.showString(text);
     }
 }

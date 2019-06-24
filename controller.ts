@@ -3,7 +3,7 @@
 input.acceleration(Dimension.X)
 //% color="#00bfff"
 namespace コントローラー {
-    let isAbleToSend = false;
+    let isAbleToSend = true;
     basic.forever(function () {
         if(!isAbleToSend) {
             basic.pause(200);

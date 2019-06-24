@@ -25,7 +25,7 @@ namespace コントローラー {
             isAbleToSend = false;
         }
     }
-    //% blockId=left block="$shipName を $angle のスピードで左折させる"
+    //% blockId=left block="$shipName を $angle の角度で左折させる"
     export function left(shipName: string, angle: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "l", angle);

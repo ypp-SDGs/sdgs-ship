@@ -1,6 +1,15 @@
 // Add your code here
 namespace コントローラー {
-    export function 前進(speed: number): void {
-        
+    //% blockId=forward block="前進 %v"
+    export function forward(speed: number): void {
+
+    }    
+    //% blockId=forward block="右折 %v"
+    export function right(speed: number): void {
+
+    }    
+    //% blockId=forward block="左折 %v"
+    export function left(speed: number): void {
+
     }
 }

@@ -1,4 +1,5 @@
 // Add your code here
+//% color="#00ffff"
 namespace コントローラー {
     //% blockId=forward block="前進 %v"
     export function forward(speed: number): void {

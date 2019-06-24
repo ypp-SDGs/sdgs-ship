@@ -4,11 +4,11 @@ namespace コントローラー {
     export function forward(speed: number): void {
 
     }    
-    //% blockId=forward block="右折 %v"
+    //% blockId=right block="右折 %v"
     export function right(speed: number): void {
 
     }    
-    //% blockId=forward block="左折 %v"
+    //% blockId=left block="左折 %v"
     export function left(speed: number): void {
 
     }

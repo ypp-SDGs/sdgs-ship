@@ -45,12 +45,15 @@ namespace コントローラー {
         }
     }
 
+    //% blockId=bool block="この船がとったごみの時"
+    export function returnBool(): boolean {
+        return true;
+    }
+
     //% blockId=on_received_value block="情報を受信したとき"
     //% draggableParameters
     export function onReceivedValuecb(handler: (s: string, n: number) => void) {
 
     }
-
-
 
 }

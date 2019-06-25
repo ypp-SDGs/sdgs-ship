@@ -4,46 +4,52 @@ input.acceleration(Dimension.X)
 //% color="#00bfff"
 namespace コントローラー {
     let isAbleToSend = true;
+    let shipName = '';
     basic.forever(function () {
         if (!isAbleToSend) {
             basic.pause(200);
             isAbleToSend = true;
         }
     });
-    radio.onReceivedValue(function (name: string, value: number) {
+    // radio.onReceivedValue(function (name: string, value: number) {
+    //     if(name.includes(shipName)) {
+    //         onReceivedValue(function () {
+                
+    //         });
+    //     } 
+    // });
 
-    });
-
-    //% blockId=forward block="$shipName を $speed のスピードで前進させる"
-    export function forward(shipName: string, speed: number): void {
+    //% blockId=name_input block="この船の名前を$name にする"
+    export function nameInput(name: string): void {
+        shipName = name;
+    }    
+    //% blockId=forward block="この船を$speed のスピードで前進させる"
+    export function forward(speed: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "f", speed);
             isAbleToSend = false;
         }
     }
-    //% blockId=right block="$shipName を $angle の角度で右折させる"
-    export function right(shipName: string, angle: number): void {
+    //% blockId=right block="この船を$angle の角度で右折させる"
+    export function right(angle: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "r", angle);
             isAbleToSend = false;
         }
     }
-    //% blockId=left block="$shipName を $angle の角度で左折させる"
-    export function left(shipName: string, angle: number): void {
+    //% blockId=left block="この船を$angle の角度で左折させる"
+    export function left(angle: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "l", angle);
             isAbleToSend = false;
         }
     }
 
-    //% block="この船が情報をを受信したときした"
-    export function onReceivedValue(handler: () => void) {
+    //% blockId=on_received_value block="情報を受信したとき"
+    // export function onReceivedValue(handler: (handlerArg: string) => void) {
 
-    }
+    // }
 
-    //% block="on event"
-    export function onEvent(handler: () => void) {
 
-    }
 
 }

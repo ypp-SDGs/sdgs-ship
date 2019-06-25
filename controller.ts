@@ -53,7 +53,7 @@ namespace コントローラー {
         return numToReturn;
     }
 
-    //% blockId=on_received_value block="情報を受信したとき"
+    //% blockId=on_received_value block="なにかしたとき"
     //% draggableParameters
     export function onReceivedValuecb(handler: (s: string, n: number) => void) {
 

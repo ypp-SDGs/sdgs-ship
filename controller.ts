@@ -5,10 +5,13 @@ input.acceleration(Dimension.X)
 namespace コントローラー {
     let isAbleToSend = true;
     basic.forever(function () {
-        if(!isAbleToSend) {
+        if (!isAbleToSend) {
             basic.pause(200);
             isAbleToSend = true;
         }
+    });
+    radio.onReceivedValue(function (name: string, value: number) {
+
     });
 
     //% blockId=forward block="$shipName を $speed のスピードで前進させる"
@@ -32,4 +35,10 @@ namespace コントローラー {
             isAbleToSend = false;
         }
     }
+
+    //% blockId=onrecievedvalue block="この船が情報をを受信したときした"
+    export function onReceivedValue():void {
+
+    }
+
 }

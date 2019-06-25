@@ -11,13 +11,12 @@ namespace コントローラー {
             isAbleToSend = true;
         }
     });
-    // radio.onReceivedValue(function (name: string, value: number) {
-    //     if(name.includes(shipName)) {
-    //         onReceivedValue(function () {
-                
-    //         });
-    //     } 
-    // });
+    let numToReturn = 0;
+    radio.onReceivedValue(function (name: string, value: number) {
+        if(name.includes(shipName)) {
+            numToReturn = value;
+        } 
+    });
 
     //% blockId=name_input block="この船の名前を$name にする"
     export function nameInput(name: string): void {
@@ -48,6 +47,10 @@ namespace コントローラー {
     //% blockId=bool block="この船がとったごみの時"
     export function returnBool(): boolean {
         return true;
+    }    
+    //% blockId=bool block="拾ったごみの数"
+    export function returnNum(): number {
+        return numToReturn;
     }
 
     //% blockId=on_received_value block="情報を受信したとき"

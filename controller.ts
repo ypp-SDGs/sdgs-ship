@@ -47,7 +47,7 @@ namespace コントローラー {
 
     //% blockId=on_received_value block="情報を受信したとき"
     //% draggableParameters
-    export function onReceivedValue(handler: (handlerArg: string) => void) {
+    export function onReceivedValuecb(handler: (s: string, n: number) => void) {
 
     }
 

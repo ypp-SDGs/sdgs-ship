@@ -37,7 +37,7 @@ namespace コントローラー {
     }
 
     //% blockId=onrecievedvalue block="この船が情報をを受信したときした"
-    export function onReceivedValue():void {
+    export function onReceivedValue(handler: () => void) {
 
     }
 

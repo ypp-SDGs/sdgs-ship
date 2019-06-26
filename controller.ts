@@ -42,7 +42,7 @@ namespace コントローラー {
 
     //% blockId=judge block="$receivedString がこの船についての情報か調べる"
     export function judge(receivedString: string): void {
-        if(receivedString[1] == shipName) {
+        if(receivedString[0] == shipName) {
             isThisShip = true;
         }else {
             isThisShip = false;

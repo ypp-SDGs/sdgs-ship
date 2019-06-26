@@ -5,6 +5,7 @@ input.acceleration(Dimension.X)
 namespace コントローラー {
     let isAbleToSend = true;
     let shipName = '';
+    let isThisShip = false;
     basic.forever(function () {
         if (!isAbleToSend) {
             basic.pause(200);
@@ -39,9 +40,18 @@ namespace コントローラー {
         }
     }
 
+    //% blockId=left block="$receivedString がこの船についての情報か調べる"
+    export function judge(receivedString: string): void {
+        if(receivedString[1] == shipName) {
+            isThisShip = true;
+        }else {
+            isThisShip = false;
+        }
+    }
+
     //% blockId=bool block="この船がとったごみの時"
     export function returnBool(): boolean {
-        return true;
+        return isThisShip;
     }
     //% blockId=num block="拾ったごみの数"
     export function returnNum(): number {
@@ -50,8 +60,10 @@ namespace コントローラー {
 
     //% blockId=on_received_value block="なにかしたとき"
     //% draggableParameters
-    export function onReceivedValuecb(handler: (s: string, n: number) => void) {
+    export function onReceivedValue(handler: (s: string, n: number) => void) {
 
     }
+
+
 
 }

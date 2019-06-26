@@ -5,6 +5,7 @@ input.acceleration(Dimension.X)
 namespace コントローラー {
     let isAbleToSend = true;
     let shipName = '';
+    radio.setGroup(0);
     basic.forever(function () {
         if (!isAbleToSend) {
             basic.pause(200);
@@ -13,15 +14,15 @@ namespace コントローラー {
     });
     let numToReturn = 0;
     radio.onReceivedValue(function (name: string, value: number) {
-        if(name.includes(shipName)) {
+        if (name.includes(shipName)) {
             numToReturn = value;
-        } 
+        }
     });
 
     //% blockId=name_input block="この船の名前を$name にする"
     export function nameInput(name: string): void {
         shipName = name;
-    }    
+    }
     //% blockId=forward block="この船を$speed のスピードで前進させる"
     export function forward(speed: number): void {
         if (isAbleToSend) {
@@ -47,7 +48,7 @@ namespace コントローラー {
     //% blockId=bool block="この船がとったごみの時"
     export function returnBool(): boolean {
         return true;
-    }    
+    }
     //% blockId=num block="拾ったごみの数"
     export function returnNum(): number {
         return numToReturn;

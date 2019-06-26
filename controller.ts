@@ -48,7 +48,7 @@ namespace コントローラー {
     export function returnBool(): boolean {
         return true;
     }    
-    //% blockId=bool block="拾ったごみの数"
+    //% blockId=num block="拾ったごみの数"
     export function returnNum(): number {
         return numToReturn;
     }

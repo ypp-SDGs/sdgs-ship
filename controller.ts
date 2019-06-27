@@ -65,7 +65,7 @@ namespace コントローラー {
     }
 
     //% blockId=send_data block="データ送信$plasticNum $othersNum"
-    export function sendData(plasticNum: number, othersNum: number) {
+    export function sendData(plasticNum: number, othersNum: number): void {
         radio.sendValue(shipName + plasticNum, plasticNum + othersNum);
         isAbleToSend = false;
     }

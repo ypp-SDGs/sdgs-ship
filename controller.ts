@@ -54,15 +54,15 @@ namespace コントローラー {
         return isThisShip;
     }
     //% blockId=num block="拾ったごみの数"
-    export function returnNum(): number {
-        return numToReturn;
-    }
+    // export function returnNum(): number {
+    //     return numToReturn;
+    // }
 
     //% blockId=on_received_value block="なにかしたとき"
     //% draggableParameters
-    export function onReceivedValue(handler: (s: string, n: number) => void) {
+    // export function onReceivedValue(handler: (s: string, n: number) => void) {
 
-    }
+    // }
 
     //% blockId=send_data block="データ送信$plasticNum $othersNum"
     export function sendData(plasticNum: number, othersNum: number): void {

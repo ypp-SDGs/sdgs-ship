@@ -2,7 +2,7 @@
 
 input.acceleration(Dimension.X)
 //% color="#00bfff"
-namespace コントローラー {
+namespace 船のコントローラー {
     let isAbleToSend = true;
     let shipName = '';
     let isThisShip = false;

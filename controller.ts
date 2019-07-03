@@ -40,7 +40,7 @@ namespace 船のコントローラー {
         }
     }
 
-    //% blockId=judge block="受け取った$receivedString がこの船についての情報か調べる"
+    //% blockId=judge block="分析準備$receivedString"
     export function judge(receivedString: string): void {
         if(receivedString[0] == shipName) {
             isThisShip = true;
@@ -49,7 +49,7 @@ namespace 船のコントローラー {
         }
     }
 
-    //% blockId=bool block="この船がとったごみの時"
+    //% blockId=bool block="準備完了"
     export function returnBool(): boolean {
         return isThisShip;
     }

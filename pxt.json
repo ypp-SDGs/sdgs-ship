@@ -1,6 +1,6 @@
 {
     "name": "sdgs-ship",
-    "version": "0.0.36",
+    "version": "0.0.37",
     "description": "",
     "dependencies": {
         "core": "*",

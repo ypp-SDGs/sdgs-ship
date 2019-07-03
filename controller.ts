@@ -19,6 +19,7 @@ namespace 船のコントローラー {
         shipName = name;
     }
     //% blockId=forward block="この船を$speed のスピードで前進させる"
+    //% speed.defl=5
     export function forward(speed: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "f", speed);
@@ -26,6 +27,7 @@ namespace 船のコントローラー {
         }
     }
     //% blockId=right block="この船を$angle の角度で右折させる"
+    //% angle.defl=18
     export function right(angle: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "r", angle);
@@ -33,6 +35,7 @@ namespace 船のコントローラー {
         }
     }
     //% blockId=left block="この船を$angle の角度で左折させる"
+    //% angle.defl=18
     export function left(angle: number): void {
         if (isAbleToSend) {
             radio.sendValue(shipName + "l", angle);

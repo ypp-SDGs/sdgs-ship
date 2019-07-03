@@ -43,8 +43,8 @@ namespace 船のコントローラー {
         }
     }
 
-    //% blockId=judge block="分析準備$receivedString"
-    export function judge(receivedString: string): void {
+    //% blockId=judge block="データ$receivedString $receivedNumber が分析可能か調べる"
+    export function judge(receivedString: string, receivedNumber: number): void {
         if(receivedString[0] == shipName) {
             isThisShip = true;
         }else {
@@ -52,7 +52,7 @@ namespace 船のコントローラー {
         }
     }
 
-    //% blockId=bool block="準備完了"
+    //% blockId=bool block="分析可能"
     export function returnBool(): boolean {
         return isThisShip;
     }

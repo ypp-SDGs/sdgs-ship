@@ -8,7 +8,7 @@ namespace 船のコントローラー {
     let isThisShip = false;
     basic.forever(function () {
         if (!isAbleToSend) {
-            basic.pause(200);
+            basic.pause(300);
             isAbleToSend = true;
         }
     });

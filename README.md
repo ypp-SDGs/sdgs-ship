@@ -23,8 +23,9 @@ radio.setGroup(0)
 
 3. to move a ship, use 船のコントローラー.forward(), 船のコントローラー.left(18), 船のコントローラー.right(18) and so on (in this example, when Button AB are pressed a ship moves forward)
 ```
+let speed = 5;
 input.onButtonPressed(Button.AB, function () {
-    船のコントローラー.forward(スピード)
+    船のコントローラー.forward(speed)
 })
 ```
 

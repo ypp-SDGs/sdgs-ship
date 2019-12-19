@@ -10,7 +10,7 @@ The game shown above is part of the project. Currently, we use this game for an 
 
 You need at least 2 micro:bits.
 One is to be a Server micro:bit that recieves radio signal from another micro:bit. A Server micro:bit does not use the extension and has to be connected to a computer which runs the program shown above. You can download the code [here](https://makecode.microbit.org/_Myb0AWL8TYKx) to make a Server micro:bit.
-Another one needs to use functions provided by this API
+Another one needs to use functions provided by this API.
 
 ## Basic usage
 

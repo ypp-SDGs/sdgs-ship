@@ -19,7 +19,6 @@ Another one needs to use functions provided by this API
 ```
 radio.setGroup(0)
 船のコントローラー.nameInput("e")
-
 ```
 
 3. to move a ship, use 船のコントローラー.forward(), 船のコントローラー.left(18), 船のコントローラー.right(18) and so on (in this example, when Button AB are pressed a ship moves forward)
@@ -27,7 +26,6 @@ radio.setGroup(0)
 input.onButtonPressed(Button.AB, function () {
     船のコントローラー.forward(スピード)
 })
-
 ```
 
 ## Licence

@@ -12,7 +12,7 @@ You need at least 2 micro:bits.
 One is to be a Server micro:bit that recieves radio signal from another micro:bit. A Server micro:bit does not use the extension and has to be connected to a computer which runs the program shown above. You can download the code [here](https://makecode.microbit.org/_Myb0AWL8TYKx) to make a Server micro:bit.
 Another one needs to use functions provided by this API
 
-## Basic usage of the API
+## Basic usage
 
 1. set the radio group the same as the one that a Server micro:bit is in (in this example, group '0')
 2. choose ship's name either from lowercase alphabets a, b, c, d, and e, then pass it into 船のコントローラー.nameInput()
@@ -29,3 +29,9 @@ input.onButtonPressed(Button.AB, function () {
 })
 
 ```
+
+## Licence
+MIT
+
+## Code of Conduct
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact opencode@microsoft.com with any additional questions or comments.

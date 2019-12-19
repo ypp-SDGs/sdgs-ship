@@ -15,7 +15,7 @@ Another one needs to use functions provided by this API
 ## Basic usage of the API
 
 1. set the radio group the same as the one that a Server micro:bit is in (in this example, group '0')
-2. choose ship's name either from lowercase alphabets a, b, c, d, and e, then put it in 船のコントローラー.nameInput()
+2. choose ship's name either from lowercase alphabets a, b, c, d, and e, then pass it into 船のコントローラー.nameInput()
 ```
 radio.setGroup(0)
 船のコントローラー.nameInput("e")

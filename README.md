@@ -15,7 +15,7 @@ Another one needs to use functions provided by this API.
 ## Basic usage
 
 1. set the radio group the same as the one that the Server micro:bit you want to communicate with is in (in this example, group '0')
-2. choose ship's name either from lowercase alphabets a, b, c, d, and e, then pass it into 船のコントローラー.nameInput()
+2. choose ship's name either from lowercase alphabets a, b, c, d, and e, then pass it into 船のコントローラー.nameInput() (in this example, 'e')
 ```
 radio.setGroup(0)
 船のコントローラー.nameInput("e")
@@ -23,7 +23,7 @@ radio.setGroup(0)
 
 3. to move a ship, use 船のコントローラー.forward(), 船のコントローラー.left(18), 船のコントローラー.right(18) and so on (in this example, when Button AB are pressed a ship moves forward)
 ```
-let speed = 5;
+let speed = 5
 input.onButtonPressed(Button.AB, function () {
     船のコントローラー.forward(speed)
 })

@@ -1,6 +1,6 @@
 # sdgs-ship
 
-This API provides functions used in the project "プログラミングで海のSDGs" (https://programming.or.jp/umip/)
+This API provides functions used in the project "プログラミングで海のSDGs!" (https://programming.or.jp/umip/)
 
 ![sdgs-ship](https://raw.github.com/wiki/ypp-SDGs/sdgs-ship/images/sdgs_ship.gif)
 

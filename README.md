@@ -4,7 +4,7 @@ This API provides functions used in the project "プログラミングで海のS
 
 ![sdgs-ship](https://raw.github.com/wiki/ypp-SDGs/sdgs-ship/images/sdgs_ship.gif)
 
-The game shown above is part of the project. The sourse code of this game will be published soon. Currently, we use this game for an educational purpose.
+The game shown above is part of the project. Currently, we use this game for an educational purpose.
 
 ## How this works
 

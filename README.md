@@ -29,7 +29,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-You can find an example usage [here](https://makecode.microbit.org/_JHk3Ho7R85fD)
+You can find an example [here](https://makecode.microbit.org/_JHk3Ho7R85fD)
 
 ## Licence
 MIT
